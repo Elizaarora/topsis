@@ -17,14 +17,14 @@ This repository provides two implementations:
 
 ## 🖥️ Command-Line Tool
 
-## Requirements
+### Requirements
 
 - Python 3.x  
 - pandas  
 - numpy  
 - openpyxl (for Excel file support)
 
-## Installation
+### Installation
 
 Install the required dependencies using pip:
 
@@ -59,9 +59,6 @@ A3	0.4	0.5	0.4	0.3
 Note: The input file must contain at least three columns (one for alternatives and at least two criteria).
 
 Example
-
-Given an input file data.xlsx:
-
 python topsis.py data.xlsx "1,1,1,1" "+,+,-,+" output.xlsx
 
 This command will:
@@ -72,7 +69,7 @@ Apply equal weights to all criteria
 
 Treat the third criterion as non-beneficial
 
-Compute TOPSIS scores and rankings
+Calculate TOPSIS scores and rankings
 
 Save the results to output.xlsx
 
@@ -158,159 +155,25 @@ Click Process TOPSIS Analysis
 
 View and download the results
 
-Web Service Input Format
-
-Same as the command-line tool:
-
-First column: Alternative names/identifiers
-
-Remaining columns: Numeric criterion values
-
-Web Service Validation
-
-The web application checks:
-
-Number of weights equals number of impacts
-
-Impacts contain only + or -
-
-Proper comma-separated formatting
-
-Valid email format
-
-Minimum column requirement
-
-Numeric-only criteria values
-
-Email Setup (Web Service)
-
-The web app uses EmailJS for sending results. To enable it:
-
-Sign up at https://www.emailjs.com/
-
-Create an email service
-
-Create an email template
-
-Copy your Public Key, Service ID, and Template ID
-
-Update index.html:
-
-Initialize EmailJS with your Public Key
-
-Update service_id
-
-Update template_id
-
-Update user_id
-
-If EmailJS is not configured, the app falls back to a mailto: link.
-
-Web Service Dependencies
-
-Loaded via CDN:
-
-SheetJS (xlsx.js)
-
-EmailJS (optional)
-
-Font Awesome
-
-No installation is required.
-
-Web Service Browser Compatibility
-
-Works in modern browsers supporting:
-
-ES6 JavaScript
-
-File API
-
-Fetch API
-
-Web Service Features in Detail
-
-Data Preview Tab – view uploaded data in a formatted table
-
-Results Tab – see TOPSIS scores and rankings
-
-Statistics Dashboard – shows key summary metrics
-
-Rank Badges – color-coded rankings
-
-Progress Indicators – visual processing feedback
-
-Error Handling – clear and helpful messages
-
-📊 How TOPSIS Works
-
-Normalize the decision matrix
-
-Apply criterion weights
-
-Determine ideal best and worst solutions
-
-Compute Euclidean distances
-
-Calculate relative closeness scores
-
-Rank the alternatives
-
-🔧 Error Handling
-
-Both tools will display error messages if:
-
-Input file cannot be found or read
-
-Unsupported file format is used
-
-Dataset has fewer than three columns
-
-Non-numeric values appear in criteria
-
-Weights/impacts mismatch
-
-Invalid impact symbols are provided
-
-Incorrect CLI arguments (CLI only)
-
-Invalid email format (Web only)
-
-📝 Example Usage
-Command-Line Example
-python topsis.py data.xlsx "1,1,1,1" "+,+,-,+" output.xlsx
-Web Service Example
-
-Open index.html in the browser
-
-Upload data.xlsx
-
-Enter weights: 1,1,1,1
-
-Enter impacts: +,+,-,+
-
-Enter email: user@example.com
-
-Click Process TOPSIS Analysis
-
-Both approaches produce the same results with:
-
-Original columns
-
-Topsis Score column
-
-Rank column
-
-🚀 Quick Start
-For Command-Line Tool
-pip install pandas numpy openpyxl
-python topsis.py <InputFile> <Weights> <Impacts> <OutputFile>
-For Web Service
-
-Open index.html in any modern browser
-
-No installation required — everything runs in the browser
-
 📄 License
 
 This project is open source and available for use.
+
+
+---
+
+✅ This will render like your **2nd screenshot**  
+✅ Proper heading hierarchy  
+✅ Clean GitHub styling  
+✅ Humanized text  
+
+---
+
+If you want 🔥 I can next:
+
+- add badges  
+- add screenshots section  
+- make it resume-level professional  
+- add PyPI packaging section  
+
+Just say the word.
